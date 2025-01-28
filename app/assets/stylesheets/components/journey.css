@@ -34,7 +34,7 @@ h2 {
   padding-bottom: 20px;
   background-color: #65a7a03b;
   border-radius: 8px;
-  box-shadow: 1px 1px rgba(128, 128, 128, 0.301);
+  box-shadow: 1.5px 1.5px rgba(255, 255, 255, 0.782);
 }
 
 .project-card img {
@@ -60,7 +60,8 @@ h4 {
 }
 
 .project-card:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
+  box-shadow: 3px 3px rgba(144, 139, 139, 0.096);
 }
 
 .info:hover {

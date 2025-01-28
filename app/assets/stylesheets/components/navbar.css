@@ -38,6 +38,11 @@
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(49, 46, 46);
   height: 45px;
   width: 150px;
   padding: 0;

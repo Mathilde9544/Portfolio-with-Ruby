@@ -1,0 +1,25 @@
+<%= form_with model: @contact, url: contact_path, local: true do |form| %>
+  <div>
+    <%= form.label :name, "Your name" %><br>
+    <%= form.text_field :name, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :company, "Company name" %><br>
+    <%= form.text_field :company, required: false %>
+  </div>
+
+  <div>
+    <%form.label :email, "Your email" %><br>
+    <% form.text_field :email, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :message, "Your message" %><br>
+    <%= form.text_area :message, required: true %>
+  </div>
+
+  <div>
+    <%= form.submit "Send message" %>
+  </div>
+<% end %>
