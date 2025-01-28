@@ -1,0 +1,51 @@
+<nav class="navbar">
+  <a href="/" class="name">Mathilde Renaud</a>
+  <div class="navbarText">
+    <div class="menu">
+      <p class="menuItem">About</p>
+      <a href="/resume" class="menuItem">Resume</a>
+    </div>
+    <button class="contact">Contact me!</button>
+    <p class="message"><LuMessageCircle /></p>
+  </div>
+</nav>
+
+<section class="profile">
+  <div class="introText">
+    <div class="hello">
+      <h1 class="text">Hello, I'm a <br/> Web Developer</h1>
+      <div class="stacks">
+        <p class="item">React</p>
+        <p class="item">Ruby on Rails</p>
+        <p class="item">JavaScript</p>
+        <p class="item">CSS</p>
+        <p class="item">HTML</p>
+      </div>
+    </div>
+  </div>
+  <div class="introImage">
+    <img class="image" src="<%= asset_path('mathilde.jpg') %>">
+    </div>
+</section>
+
+<section class="journey">
+  <h2>My last projects</h2>
+  <div class="projects">
+    <div>
+      <div class="project-card">
+        <h4>GardenEase</h4>
+        <img id="gardenease-img"  src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
+      </div>
+      <p class="info">Info</p>
+    </div>
+    <div>
+      <div class="project-card">
+        <h4>Adventure Exchange</h4>
+        <img src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
+      </div>
+      <p class="info">Info</p>
+    </div>
+  </div>
+</section>
+
+<footer></footer>

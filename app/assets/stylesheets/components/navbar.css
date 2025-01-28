@@ -1,0 +1,112 @@
+.navbar {
+  height: 60px;
+  background-color: #65a7a0;
+  padding: 5px 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  position: top;
+}
+
+.name {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 35px;
+  color: white;
+  margin-top: 10px;
+  width: 300px;
+  text-decoration: none;
+}
+
+.navbarText {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItem {
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  height: 45px;
+  width: 150px;
+  padding: 0;
+  padding-top: 2px;
+  background-color: white ;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Quattrocento", serif;
+}
+.contact:hover {
+  font-size: 19px;
+  transition: .1s;
+  color:#65a7a0;
+}
+
+.message {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 5px 10vw;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .navbar {
+    height: 110px;
+    display: block;
+    position: relative;
+    padding-top: 35px;
+    align-items: center;
+  }
+
+  .navbarText {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menuItem {
+    font-size: 20px;
+  }
+
+  .contact {
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .contact {
+    display: none;
+  }
+
+  .message {
+    display: block;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    color: white;
+    z-index: 5;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .navbar {
+    height: 150px;
+  }
+}
