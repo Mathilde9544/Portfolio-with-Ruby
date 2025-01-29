@@ -11,9 +11,33 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "hqTXP7fTiXTLwOf_l",
+          });
+      })();
+    </script>
   </head>
 
   <body>
+    <nav class="navbar">
+      <a href="/" class="name">Mathilde Renaud</a>
+      <div class="navbarText">
+        <div class="menu">
+          <p class="menuItem">About</p>
+          <a href="/resume" class="menuItem">Resume</a>
+        </div>
+        <%= link_to "Contact me!", contact_path, class:"contact" %>
+        <p class="message"><LuMessageCircle /></p>
+      </div>
+    </nav>
     <%= yield %>
+
+    <footer></footer>
   </body>
 </html>

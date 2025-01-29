@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "home#index"
   get "/contact", to: "contacts#new", as: :contact
+  post "/contact", to: "contacts#create"
 
 end

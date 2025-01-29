@@ -23,5 +23,7 @@ module RubyPortfolio
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    ENV["HOTMAIL_USERNAME"] ||= Rails.application.credentials.dig(:hotmail, :username)
+    ENV["HOTMAIL_PASSWORD"] ||= Rails.application.credentials.dig(:hotmail, :password)
   end
 end

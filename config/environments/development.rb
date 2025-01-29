@@ -46,8 +46,8 @@ Rails.application.configure do
     address:              "smtp.office365.com",
     port:                 587,
     domain:               "hotmail.com",
-    user_name: ENV["HOTMAIL_USERNAME"],
-    password: ENV["HOTMAIL_PASSWORD"]
+    user_name:            Rails.application.credentials.dig(:hotmail, :username),
+    password:             Rails.application.credentials.dig(:hotmail, :password),
     authentication:       "login",
     enable_starttls_auto: true
   }
