@@ -10,8 +10,6 @@ export default class extends Controller {
   }
 
   async sendEmail(event) {
-
-
     event.preventDefault()
 
     const name = this.nameTarget.value;

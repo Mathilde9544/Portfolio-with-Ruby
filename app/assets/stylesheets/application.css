@@ -19,6 +19,7 @@
 @import './components/journey.css';
 @import './components/footer.css';
 @import './components/contact_form.css';
+@import "font-awesome";
 
 body {
   background-color: #ecffe9;

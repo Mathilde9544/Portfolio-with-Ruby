@@ -16,22 +16,35 @@
     </div>
 </section>
 
-<section class="journey">
+<section class="journey" data-controller="project" >
   <h2 class="journey-title">My last projects</h2>
   <div class="projects">
-    <div>
-      <div class="project-card">
+    <div class="project">
+      <div class="text-info" data-project-target="info">
+        <p>GardenEase is a website for people who would like
+          to start gardening at their place, but don't know how to start.<br/>
+          By understanding your preferences and home environment, GardenEase
+          provides tailored gardening projects with step-by-step care advices.<br/>
+
+          GardenEase was built during the 2 last weeks of the bootcamp.</p>
+      </div>
+      <div class="project-card" data-action="mouseover->project#showText mouseout->project#hideText">
         <h4>GardenEase</h4>
-        <img id="gardenease-img"  src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
+        <img class="project-img" id="gardenease-img"  src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
       </div>
-      <p class="info">Info</p>
     </div>
-    <div>
-      <div class="project-card">
+
+    <div class="project">
+      <div class="project-card" data-action="mouseover->project#showText mouseout->project#hideText">
         <h4>Adventure Exchange</h4>
-        <img src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
+        <img class="project-img" src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
       </div>
-      <p class="info">Info</p>
+      <div class="text-info" data-project-target="info">
+        <p>Adventure Exchange is a mobile web App. The concept is similar to the
+          AirBnB idea: it's a rental app. With Adventure Exchange, people could
+          rent or offer to rent sports items.<br/>
+          Adventure Exchange was built in 1 week and was my first project at Le Wagon.</p>
+      </div>
     </div>
   </div>
 </section>
