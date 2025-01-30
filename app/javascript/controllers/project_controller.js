@@ -14,6 +14,12 @@ export default class extends Controller {
     if (project) {
       project.classList.add("border")
     }
+
+    this.element.querySelectorAll(".project").forEach((element) => {
+      if (element !== project) {
+        element.classList.add("small");
+      }
+    })
   }
 
   hideText(event) {
@@ -27,5 +33,9 @@ export default class extends Controller {
     if (project) {
       project.classList.remove("border")
     }
+
+    this.element.querySelectorAll(".project").forEach((element) => {
+      element.classList.remove("small")
+    })
   }
 }
