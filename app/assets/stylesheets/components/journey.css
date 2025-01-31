@@ -22,6 +22,7 @@
   width: 200px;
   margin: 20px;
   text-align: center;
+  text-decoration: none;
 }
 
 .text-info.show {
@@ -31,6 +32,8 @@
 .project {
   display: flex;
   border-radius: 8px;
+  text-decoration: none;
+  color: rgb(49, 46, 46);
 }
 
 .project.border {
@@ -104,4 +107,5 @@ h3 {
   padding: 12px;
   border-radius: 10px;
   font-size: 18px;
+  text-decoration: none;
 }

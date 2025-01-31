@@ -1,0 +1,2 @@
+module AdventureExchangeHelper
+end

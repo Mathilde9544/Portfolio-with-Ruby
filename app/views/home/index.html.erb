@@ -19,7 +19,8 @@
 <section class="journey" data-controller="project" >
   <h2 class="journey-title">My last projects</h2>
   <div class="projects">
-    <div class="project" id="gardenease-project">
+    <%= link_to gardenease_path, class: "project", id: "gardenease-project" do %>
+
       <div class="text-info" data-project-target="info">
         <p><strong>GardenEase</strong> is a website for people who would like
           to start gardening at their place, but don't know how to start.<br/>
@@ -32,20 +33,22 @@
         <h3>GardenEase</h3>
         <img class="project-img" id="gardenease-img"  src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
       </div>
-    </div>
+    <% end %>
 
     <div class="project" id="adventure-project">
-      <div class="project-card" id="adventure"
-      data-action="mouseover->project#showText mouseout->project#hideText">
-        <h3>Adventure Exchange</h3>
-        <img class="project-img" src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
-      </div>
-      <div class="text-info" data-project-target="info">
-        <p><strong>Adventure Exchange</strong> is a MOBILE web App. The concept is similar to the
-          AirBnB idea: it's a <strong>rental app</strong>. With Adventure Exchange, people could
-          search, rent or offer to rent sports items.<br/><br/>
-          Adventure Exchange was built in 1 week and was my first project at Le Wagon.</p>
-      </div>
+
+        <div class="project-card" id="adventure"
+        data-action="mouseover->project#showText mouseout->project#hideText">
+          <h3>Adventure Exchange</h3>
+          <img class="project-img" src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
+        </div>
+        <div class="text-info" data-project-target="info">
+          <p><strong>Adventure Exchange</strong> is a MOBILE web App. The concept is similar to the
+            AirBnB idea: it's a <strong>rental app</strong>. With Adventure Exchange, people could
+            search, rent or offer to rent sports items.<br/><br/>
+            Adventure Exchange was built in 1 week and was my first project at Le Wagon.</p>
+        </div>
+
     </div>
   </div>
 </section>
@@ -54,7 +57,7 @@
   <h2 class="journey-title">Certifications</h2>
   <div class="lewagon">
     <h4>Web developer</h4>
-    <p class="bootcamp">Bootcamp with Le Wagon - 9/24-12/24</p>
+    <p class="bootcamp">Bootcamp with Le Wagon - 10/24-12/24</p>
     <img class="project-img" id="wagon-img" src="<%= asset_path('wagon.png') %>" alt="wagon">
   </div>
 </section>

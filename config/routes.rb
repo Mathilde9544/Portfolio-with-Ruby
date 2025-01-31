@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   get "/contact", to: "contacts#new", as: :contact
   post "/contact", to: "contacts#create"
 
+  get "/gardenease", to: "gardenease#index", as: :gardenease
+  get "/adventure-exchange", to: "adventureexchange#index", as: :adventureExchange
+
 end

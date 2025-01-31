@@ -23,18 +23,7 @@
   position: relative;
   align-items: center;
   justify-content: space-between;
-  width: 330px;
-}
-
-.menu {
-  display: flex;
-}
-
-.menuItem {
-  margin: 10px;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
+  width: 280px;
 }
 
 .contact {
