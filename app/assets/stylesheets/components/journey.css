@@ -109,3 +109,33 @@ h3 {
   font-size: 18px;
   text-decoration: none;
 }
+
+
+@media screen and (max-width: 1150px) {
+  #gardenease {
+    margin-left: 200px;
+  }
+
+  #adventure {
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .journey-title {
+    margin-inline: 20%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    justify-content: center;
+  }
+
+}
