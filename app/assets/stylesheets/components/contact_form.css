@@ -38,9 +38,12 @@
   font-size: 15px;
 }
 
+#submit-btn:hover {
+  transform: scale(1.02);
+}
+
 .form-title {
   display: flex;
   justify-content: center;
   text-align: center;
-
 }

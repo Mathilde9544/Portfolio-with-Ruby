@@ -32,7 +32,9 @@ export default class extends Controller {
         "hqTXP7fTiXTLwOf_l"
       )
 
-      console.log("Email sent:", response)
+      alert("Message sent, thank you!")
+      this.element.reset();
+      window.location.reload();
 
     } catch (error) {
       console.error("oups:", error)

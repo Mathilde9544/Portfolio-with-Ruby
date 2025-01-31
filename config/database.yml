@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: storage/production.sqlite3
+  url: <%= ENV['DATABASE_URL'] %>
+  pool: 5
+  timeout: 5000
