@@ -3,8 +3,9 @@
 }
 
 #wagon-img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  filter: grayscale(100%);
 }
 
 h4 {

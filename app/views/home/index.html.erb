@@ -20,18 +20,18 @@
   <h2 class="journey-title">My last projects</h2>
   <div class="projects">
     <%= link_to gardenease_path, class: "project", id: "gardenease-project" do %>
-
-      <div class="text-info" data-project-target="info">
-        <p><strong>GardenEase</strong> is a website for people who would like
-          to start gardening at their place, but don't know how to start.<br/>
-          By understanding your preferences and home environment, GardenEase
-          provides tailored gardening projects with step-by-step care advices.<br/>
-          GardenEase was built during the 2 last weeks of my <strong>bootcamp at Le Wagon.</strong></p>
-      </div>
       <div class="project-card" id="gardenease"
       data-action="mouseover->project#showText mouseout->project#hideText">
         <h3>GardenEase</h3>
         <img class="project-img" id="gardenease-img"  src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
+        <div class="stack-list">
+          <img class="stack-img" id="html-css" src="<%= asset_path('html5.svg') %>">
+          <img class="stack-img" id="html-css" src="<%= asset_path('css3.svg') %>">
+          <img class="stack-img" src="<%= asset_path('ruby.svg') %>">
+          <img class="stack-img" src="<%= asset_path('javascript.svg') %>">
+          <img class="stack-img" src="<%= asset_path('json.svg') %>">
+          <p class="api">APIs</p>
+        </div>
       </div>
     <% end %>
 
@@ -41,12 +41,12 @@
         data-action="mouseover->project#showText mouseout->project#hideText">
           <h3>Adventure Exchange</h3>
           <img class="project-img" src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
-        </div>
-        <div class="text-info" data-project-target="info">
-          <p><strong>Adventure Exchange</strong> is a MOBILE web App. The concept is similar to the
-            AirBnB idea: it's a <strong>rental app</strong>. With Adventure Exchange, people could
-            search, rent or offer to rent sports items.<br/><br/>
-            Adventure Exchange was built in 1 week and was my first project at Le Wagon.</p>
+          <div class="stack-list">
+            <img class="stack-img" id="html-css" src="<%= asset_path('html5.svg') %>">
+            <img class="stack-img" id="html-css" src="<%= asset_path('css3.svg') %>">
+            <img class="stack-img" src="<%= asset_path('ruby.svg') %>">
+            <img class="stack-img" src="<%= asset_path('javascript.svg') %>">
+          </div>
         </div>
 
     </div>
