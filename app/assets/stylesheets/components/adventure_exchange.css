@@ -1,43 +1,47 @@
-.gardenease-project {
+.adventurex-project {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.gardenease-presentation, .ge-details {
+.adventurex-presentation, .ae-details {
   width: 70%;
   margin-top: 40px;
   padding:15px;
 }
 
-.ge-text {
+.ae-text {
   font-size: 18px;
   margin-top: 10px;
 }
 
-.ge-parts {
+.ae-parts {
   margin-bottom: 8px;
 }
 
-.gardenease-presentation h1 {
+.adventurex-presentation h1 {
   margin:0;
   font-size: 48px;
 }
 
-.gardenease-home {
+.sports-img  {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.adventurex-img {
   width: 100%;
+  height: 550px;
 }
 
-.ge-mobile {
-  display: none;
-}
-
-.ge-details h2 {
+.ae-details h2 {
   margin-top: 0;
   font-size: 35px;
 }
 
-.ge-parts {
+.ae-parts {
   font-size: 22px;
 }
 
@@ -45,18 +49,18 @@
   margin-top: 6px;
 }
 
-.visite-gardenease {
+.visite-adventurex {
   text-decoration: none;
   color: rgb(49, 46, 46);
 }
 
-.visite-gardenease:hover {
+.visite-adventurex:hover {
   color: rgb(13, 115, 13);
   letter-spacing: 0.8px;
 }
 
 @media screen and (max-width: 600px){
-  .gardenease-presentation, .ge-details {
+  .adventurex-presentation, .ae-details {
     width: 80%;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -64,14 +68,14 @@
     font-size: 20px;
   }
 
-  .gardenease-home-mobile {
+  .adventurex-home-mobile {
     width: 100%;;
   }
 
-  .ge-desktop {
+  .ae-desktop {
     display: none;
   }
-  .ge-mobile {
+  .ae-mobile {
     display: block;
   }
  }

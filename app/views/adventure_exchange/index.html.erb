@@ -1,0 +1,42 @@
+<div class="adventurex-project">
+  <div class="adventurex-presentation">
+    <h1>Adventure Exchange</h1>
+    <p class="ae-text">Adventure Exchange is a mobile web App.
+      It's a rental app: users have the possibility rent or list sports equipment.
+      Adventure Exchange was built in 1 week and was my first project at Le Wagon.
+    </p>
+    <h4 class="ae-parts">How does it work ?</h4>
+    <p class="ae-text">User can add a sports equipment on the app from their account,
+      defining the city and the dates on which the item is available.
+      On an other hand, a user in a need of a specific item can look for one through
+      the search bar (name, city, dates). <br>
+      Few items have been added to the app, but you can try to look for a bike in Barcelona!
+    </p>
+    <div class="link">
+      <%= link_to " Visite website (better from mobile)", 'https://aventure-exchange-3d24b0ff96a8.herokuapp.com/', target: "_blank", class: "visite-adventurex" %>
+    </div>
+
+    <div class="sports-img">
+      <%= link_to "https://aventure-exchange-3d24b0ff96a8.herokuapp.com/", class: "ae-desktop", target: "_blank" do %>
+        <%= image_tag "adventure-exchange.png", class: "adventurex-img" %>
+      <% end %>
+
+      <%= link_to "https://aventure-exchange-3d24b0ff96a8.herokuapp.com/", class: "ae-mobile", target: "_blank" do %>
+        <%= image_tag "bike.png", class: "adventurex-img" %>
+      <% end %>
+    </div>
+
+  </div>
+  <div class="ae-details">
+    <h2>My contributions</h2>
+    <p class="ae-text">During this week working on Adventure Exchange, I had the oportunity to work
+      as well on the frontend and on the backend.
+    </p>
+    <h4 class="ae-parts">Product Show page</h4>
+    <p class="ae-text">Frontend (structure, carousel, image)<br>
+    Backend (price, order button) </p>
+
+    <h4 class="ae-parts">Order page</h4>
+    <p class="ae-text">Calendar with possibility of selecting a range of dates</p>
+  </div>
+</div>

@@ -23,7 +23,7 @@
       <div class="project-card" id="gardenease"
       data-action="mouseover->project#showText mouseout->project#hideText">
         <h3>GardenEase</h3>
-        <img class="project-img" id="gardenease-img"  src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
+        <img class="project-img" id="gardenease-img" src="<%= asset_path('gardenease.png') %>" alt="GardenEase">
         <div class="stack-list">
           <img class="stack-img" id="html-css" src="<%= asset_path('html5.svg') %>">
           <img class="stack-img" id="html-css" src="<%= asset_path('css3.svg') %>">
@@ -35,20 +35,19 @@
       </div>
     <% end %>
 
-    <div class="project" id="adventure-project">
-
-        <div class="project-card" id="adventure"
-        data-action="mouseover->project#showText mouseout->project#hideText">
-          <h3>Adventure Exchange</h3>
-          <img class="project-img" src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
-          <div class="stack-list">
-            <img class="stack-img" id="html-css" src="<%= asset_path('html5.svg') %>">
-            <img class="stack-img" id="html-css" src="<%= asset_path('css3.svg') %>">
-            <img class="stack-img" src="<%= asset_path('ruby.svg') %>">
-            <img class="stack-img" src="<%= asset_path('javascript.svg') %>">
-          </div>
+    <%= link_to adventureExchange_path, class: "project", id: "adventurex-project" do %>
+      <div class="project-card" id="adventure"
+      data-action="mouseover->project#showText mouseout->project#hideText">
+        <h3>Adventure Exchange</h3>
+        <img class="project-img" src="<%= asset_path('mouse.png') %>" alt="AdventureExchange">
+        <div class="stack-list">
+          <img class="stack-img" id="html-css" src="<%= asset_path('html5.svg') %>">
+          <img class="stack-img" id="html-css" src="<%= asset_path('css3.svg') %>">
+          <img class="stack-img" src="<%= asset_path('ruby.svg') %>">
+          <img class="stack-img" src="<%= asset_path('javascript.svg') %>">
         </div>
-
+      </div>
+     <% end %>
     </div>
   </div>
 </section>

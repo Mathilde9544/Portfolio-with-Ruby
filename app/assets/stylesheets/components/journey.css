@@ -57,8 +57,8 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 320px;
+  width: 240px;
+  height: 310px;
   text-align: center;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +66,7 @@
   padding-bottom: 20px;
   border: 1.5px solid #65a7a0a8;
   border-radius: 8px;
-  box-shadow: 1px 1.5px rgba(128, 128, 128, 0.419);
+  box-shadow: 1px 1.5px rgba(128, 128, 128, 0.304);
 }
 
 /*  #gardenease {
@@ -87,9 +87,10 @@
 
 .project-img {
   width: 220px;
-  height: 220px;
-  object-fit: contain;
+  height: 210px;
+  object-fit: cover;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 #gardenease-img {
@@ -138,15 +139,6 @@ h3 {
 }
 
 
-@media screen and (max-width: 1150px) {
-  #gardenease {
-    margin-left: 200px;
-  }
-
-  #adventure {
-    margin-right: 200px;
-  }
-}
 
 @media screen and (max-width: 900px) {
   .journey-title {
@@ -162,6 +154,7 @@ h3 {
   }
 
   .project {
+    display: flex;
     justify-content: center;
   }
 
